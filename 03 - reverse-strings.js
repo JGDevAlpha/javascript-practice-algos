@@ -4,9 +4,10 @@
 // 1. 'world'  =>  'dlrow'
 // 2. 'word'   =>  'drow'
 
-function reverseString(string) {
-    // Write your code here
-}
+const  reverseString = (string) => {
+    const reversedName = string.split('').reverse().join('');
+    return reversedName;
+};
 
 
 // DO NOT TOUCH TESTS BELOW

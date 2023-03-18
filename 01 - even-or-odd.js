@@ -2,8 +2,12 @@
 // Create a function that takes an integer as a parameter and returns "Even" for even numbers or "Odd" for odd numbers.
 
 
-function evenOrOdd(number) {
-    // write your code here
+const evenOrOdd = (number) => {
+    if(number % 2 === 0) {
+        return 'Even';
+    } else {
+        return 'Odd';
+    }
 }
 
 // DO NOT TOUCH TESTS BELOW
