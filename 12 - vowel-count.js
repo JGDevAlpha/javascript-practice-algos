@@ -4,7 +4,14 @@
 // e.g. elephant --> 3
 
 function vowelCount(string) {
-    // Write your code here
+    let vowels = 0;
+    const letters = string.split('');
+    for (let i = 0; i < letters.length; i++) {
+        if (letters[i] === 'a' || letters[i] === 'e' || letters[i] === 'i' || letters[i] === 'o' || letters[i] === 'u') {
+            vowels++;
+        };
+    };
+    return vowels;
 }
 
 // DO NOT TOUCH TESTS BELOW
