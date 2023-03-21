@@ -4,7 +4,11 @@
 // e.g. 'hello' --> 'ell'
 
 function wordFormatter(word) {
-    // Write your code here
+     const letters = word.split('');
+     letters.splice(0,1);
+     letters.splice(letters.length - 1, 1);
+     const newWord = letters.join('');
+     return newWord;
 }
 
 // DO NOT TOUCH TESTS BELOW
