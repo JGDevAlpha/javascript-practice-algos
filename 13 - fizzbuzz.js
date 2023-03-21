@@ -7,7 +7,13 @@
 
 
 function fizzbuzz(number) {
-    // Write your code here
+    if (number % 3 === 0 && number % 5 === 0) {
+        return 'Fizzbuzz';
+    } else if (number % 3 === 0) {
+        return 'Fizz';
+    } else if (number % 5 === 0) {
+        return 'Buzz';
+    }
 }
 
 console.log(fizzbuzz(15) === 'Fizzbuzz' ? '✅ 01 - Test Passed' : '❌ 01 - Test Failed')
