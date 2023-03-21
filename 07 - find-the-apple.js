@@ -5,7 +5,11 @@
 // returns 2
 
 function findTheApple(fruits) {
-    // Write the code here
+    for (let i = 0; i < fruits.length; i++) {
+        if(fruits[i] === 'Apple') {
+            return i;
+        };
+    }
 }
 
 
