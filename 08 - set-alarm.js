@@ -9,7 +9,11 @@
 // setAlarm(true, false) -> true
 
 function setAlarm(employed, vacation) {
-    // Write your code here
+    if (employed && !vacation) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
