@@ -6,7 +6,17 @@
 
 
 function countPositivesSumNegatives(numbersArray) {
-    // your code here
+    const positives = [];
+    let negatives = 0;
+
+    for (let i = 0; i < numbersArray.length; i++) {
+        if (numbersArray[i] > 0) {
+            positives.push(numbersArray[i]);
+        } else {
+            negatives += numbersArray[i];
+        }
+    }
+    return [positives.length, negatives];
 }
 
 
